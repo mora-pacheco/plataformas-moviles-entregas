@@ -1,52 +1,63 @@
-@media screen and (min-width: 401px) {
+@media(min-width:400px) {
     body {
-        background-color: rgb(40,60,80);
-    }    
+        background-color: rgb(40, 60, 80);
+    }
 }
-@media (min-width: 800px){
+
+@media(max-width: 799px) {
     h1 {
         text-align: center;
     }
 }
-@media (orientation: landscape){
-    article{
+
+
+@media(orientation: landscape) {
+    article {
         max-width: 50ch;
     }
-} 
-@media screen and (min-width: 200px){
-    .h1{
-        background-color: aliceblue;
+}
+
+@media(min-height:200px) {
+    h1 {
+        background-color: green;
     }
 }
-@media print{
-    *{
+
+@media print {
+    p {
         font-family: serif;
     }
 }
-@media (prefers-color-scheme: light){
-  body, h1{
-    color: #111;
-    background-color: #DDD;
-  }
+
+@media (prefers-color-scheme: light) {
+  html body,
+    h1 {
+        color: #111;
+       background-color: #ddd;
+    }
 }
-@media screen and (hover: none){
+
+@media screen and (hover: none) {
     a {
-        color: #212;
+        background-color: #212;
         padding: 2px 5px;
     }
 }
-@media screen and (min-width: 800px) and (max-width: 900px){
-    img{
+
+@media screen and (min-width:800px) and (max-width:899.99px) {
+    figure {
         display: none;
     }
 }
-@media screen and (min-width: 200px) and (max-width: 400px) {
-    img{
-        height: 400px;
-        object-fit: cover;
-    }
+
+@media screen and (min-width:200px) and (max-width:400px){
+img{
+    height: 400px;
+    object-fit: cover;
 }
-@media (resolution > 2dppx) {
+}
+
+@media (min-resolution:2.01dppx){
     article{
         background-color: #667;
     }
