@@ -1,1 +1,28 @@
-
+h1.titulo{
+    text-align: center;
+}
+body > p{
+    font-family: serif;
+}
+p#primer-parrafo {
+    background-color: #cee;
+}
+p#primer-parrafo em{
+    color: #933;
+}
+p.importante a,body p.novelas a,p.fuente a{
+    outline: 1px solid #933;
+}
+html body p.fuente.parrafo{
+    opacity: 100%;
+}
+p:not([id]) {
+    background-color: rgba(190, 120, 240, 0.6);
+}
+html body p.fuente.parrafo {
+    color: #000 !important;
+}
+.complicado {
+    font-weight: bold;
+    color: #C62 !important;
+}
