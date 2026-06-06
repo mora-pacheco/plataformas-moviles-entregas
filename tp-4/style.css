@@ -1,1 +1,53 @@
-
+@media screen and (min-width: 401px) {
+    body {
+        background-color: rgb(40,60,80);
+    }    
+}
+@media (min-width: 800px){
+    h1 {
+        text-align: center;
+    }
+}
+@media (orientation: landscape){
+    article{
+        max-width: 50ch;
+    }
+} 
+@media screen and (min-width: 200px){
+    .h1{
+        background-color: aliceblue;
+    }
+}
+@media print{
+    *{
+        font-family: serif;
+    }
+}
+@media (prefers-color-scheme: light){
+  body, h1{
+    color: #111;
+    background-color: #DDD;
+  }
+}
+@media screen and (hover: none){
+    a {
+        color: #212;
+        padding: 2px 5px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 900px){
+    img{
+        display: none;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    img{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+@media (resolution > 2dppx) {
+    article{
+        background-color: #667;
+    }
+}
